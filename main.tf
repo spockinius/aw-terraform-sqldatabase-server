@@ -17,7 +17,7 @@ resource "azurerm_resource_group" "example" {
 }
 # SQL server create
 resource "azurerm_sql_server" "example" {
-  name                         = "katakatamyexamplesqlserver"
+  name                         = "servername"
   resource_group_name          = azurerm_resource_group.example.name
   location                     = "West US"
   version                      = "12.0"
